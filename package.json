@@ -1,0 +1,29 @@
+{
+  "name": "@datagica/backend-source-filesystem",
+  "version": "0.0.3",
+  "description": "Filesystem Source for Datanote",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --harmony --bail --require chai tests/*.js"
+  },
+  "author": "Julian Bilcke <julian.bilcke@datagica.com>",
+  "license": "GPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@datagica/backend-source": "^0.0.3",
+    "chokidar": "^2.0.3",
+    "fs-promise": "^2.0.3",
+    "hash-file": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-fuzzy": "^1.6.1",
+    "deep-eql": "^3.0.1",
+    "lodash": "^4.17.5",
+    "mocha": "^5.0.1",
+    "tmp": "0.0.33",
+    "underscore": "^1.8.3"
+  }
+}
